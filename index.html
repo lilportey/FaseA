@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora VPS</title>
+</head>
+<body>
+    <h2>Configura el teu VPS</h2>
+    <form action="calcular.php" method="post">
+        <label>CPUs:</label>
+        <select name="cpus">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="8">8</option>
+        </select><br><br>
+
+        <label>RAM (GiB):</label>
+        <select name="ram">
+            <option value="1">1 GiB</option>
+            <option value="2">2 GiB</option>
+            <option value="4">4 GiB</option>
+            <option value="8">8 GiB</option>
+            <option value="16">16 GiB</option>
+        </select><br><br>
+
+        <label>Disc SSD (GiB):</label>
+        <select name="disc">
+            <option value="10">10 GiB</option>
+            <option value="20">20 GiB</option>
+            <option value="40">40 GiB</option>
+            <option value="80">80 GiB</option>
+        </select><br><br>
+
+        <label>Sistema Operatiu:</label>
+        <select name="so">
+            <option value="1">Debian 10 (1€/mes)</option>
+            <option value="5">Windows 2019 (5€/mes)</option>
+        </select><br><br>
+
+        <label>IP Fixa:</label>
+        <select name="ip">
+            <option value="0">No</option>
+            <option value="2">Sí (2€/mes)</option>
+        </select><br><br>
+
+        <input type="submit" value="Calcular Preu">
+    </form>
+</body>
+</html>
